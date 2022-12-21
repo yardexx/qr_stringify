@@ -1,0 +1,4 @@
+enum DrawingType {
+  ascii,
+  utf,
+}
