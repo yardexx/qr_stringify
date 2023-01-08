@@ -1,15 +1,11 @@
-import 'package:qr_cli_drawer/src/ascii_drawer.dart';
-import 'package:qr_cli_drawer/src/enums.dart';
-import 'package:qr_cli_drawer/src/qr_drawer.dart';
-import 'package:qr_cli_drawer/src/utf_drawer.dart';
+import 'package:qr_stringify/src/drawers/drawers.dart';
+import 'package:qr_stringify/src/enums.dart';
 
 class QrDrawerFactory {
-  static QrDrawer byType(DrawingType type) {
+  static QrDrawerBase encoding(Encoding type) {
     switch (type) {
-      case DrawingType.ascii:
-        return AsciiDrawer();
-      case DrawingType.utf:
-        return UtfDrawer();
+      case Encoding.utf8:
+        return Utf8();
     }
   }
 }
