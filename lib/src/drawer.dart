@@ -1,6 +1,4 @@
-import 'package:qr_stringify/src/typedefs.dart';
-
-import 'enums.dart';
+import 'package:qr_stringify/src/enums.dart';
 
 abstract class Drawer {
   void addImage(String image);
@@ -8,4 +6,6 @@ abstract class Drawer {
   void addPadding(int padding);
   
   void addBorder(Border border);
+
+  String draw();
 }
