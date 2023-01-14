@@ -1,4 +1,4 @@
-/// An e3xtension to simplify work with [StringBuffer].
+/// An extension to simplify work with [StringBuffer].
 extension StringBufferX on StringBuffer {
   /// Breaks [String] into List<String>.
   ///
