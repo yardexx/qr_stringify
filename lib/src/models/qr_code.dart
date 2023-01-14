@@ -40,14 +40,14 @@ class QrCode {
 
     return List.generate(
       qrImage.moduleCount,
-      (x) => _generateRow(x, qrImage),
+      (row) => _generateRow(row, qrImage),
     ).toList();
   }
 
-  List<int> _generateRow(int rowIndex, qr.QrImage image) {
+  List<int> _generateRow(int row, qr.QrImage image) {
     return List.generate(
       image.moduleCount,
-      (y) => image.isDark(rowIndex, y) ? 1 : 0,
+      (column) => image.isDark(row, column) ? 1 : 0,
     ).toList();
   }
 }
