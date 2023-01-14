@@ -1,7 +1,9 @@
 name: qr_stringify
-description: A Very Good Project created by Very Good CLI.
-version: 0.1.0+1
+description: A package to convert a QR code to a pretty nicely formated string.
+version: 0.0.1-dev.1
 publish_to: none
+homepage: https://github.com/yardexx/qr_stringify
+repository: https://github.com/yardexx/qr_stringify
 
 environment:
   sdk: ">=2.18.0 <3.0.0"

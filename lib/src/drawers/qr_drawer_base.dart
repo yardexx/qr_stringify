@@ -40,7 +40,7 @@ abstract class QrDrawerBase implements DrawingAssembler {
 
   @override
   void addPadding(int padding) {
-    if(padding == 0){
+    if (padding == 0) {
       return;
     }
 
