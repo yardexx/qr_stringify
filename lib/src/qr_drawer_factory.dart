@@ -3,6 +3,8 @@ import 'package:qr_stringify/qr_stringify.dart';
 /// A factory class which creates [QrDrawerBase] representation according to
 /// its [Encoding].
 class QrDrawerFactory {
+  const QrDrawerFactory._();
+
   /// Static constructor for [QrDrawerBase].
   ///
   /// Returns [QrDrawerBase] instance according to [Encoding].

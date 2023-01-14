@@ -40,14 +40,17 @@ abstract class QrDrawerBase implements DrawingAssembler {
 
   @override
   void addPadding(int padding) {
+    if(padding == 0){
+      return;
+    }
+
     final lines = _codeBuffer.splitToLines()..removeLast();
 
     _codeBuffer
       ..clear()
-      ..write(_computeHorizontalPadding(padding, lines.first.length))
-      ..write('\n')
+      ..writeln(_computeHorizontalPadding(padding, lines.first.length))
       ..write(_computeVerticalPadding(padding, lines))
-      ..write(_computeHorizontalPadding(padding, lines.first.length));
+      ..writeln(_computeHorizontalPadding(padding, lines.first.length));
   }
 
   String _createPaddedLine(int padding, String content) {

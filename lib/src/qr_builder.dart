@@ -38,7 +38,6 @@ class QrBuilder {
   String build() {
     final drawer = QrDrawerFactory.encoding(encoding)
       ..addCode(QrCode.fromBuilder(this))
-      ..addCode(QrCode.fromBuilder(this))
       ..addPadding(padding);
     return drawer.draw();
   }
