@@ -1,4 +1,4 @@
-<h2 align="center">QR Stringify</h2>
+<h1 align="center">QR Stringify</h1>
 <p align="center">  
 <a href="https://github.com/yardexx/qr_stringify/actions/workflows/qr_drawer_workflow.yaml"><img src="https://github.com/yardexx/qr_stringify/actions/workflows/qr_drawer_workflow.yaml/badge.svg"/></a>  
 <a href="https://codecov.io/gh/yardexx/qr_stringify"><img src="https://codecov.io/gh/yardexx/qr_stringify/branch/master/graph/badge.svg?token=6q00IsWQJG"/></a>  
@@ -16,7 +16,7 @@
 
 ### Simple 🎈
 
-Easy to use. Simply create QR builder and provide data. Additionaly, you can adjust padding and 
+Easy to use. Simply create QR builder and provide data. Additionally, you can adjust padding and 
 correction levels.
 
 ### Flexible 💃
@@ -39,7 +39,7 @@ final builder = QrBuilder(data: 'Hello World');
 final code = builder.build();
 ```
 
-> 💡 `QrBuilder` currently default to *utf8* drawer, which means, that QR code is generated using this charset. ASCII support is planned.
+> 💡 `QrBuilder` currently defaults to *utf8* drawer, which means, that QR code is generated using this charset. ASCII support is planned.
 
 ### Adding padding 🔳
 
