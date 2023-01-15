@@ -4,6 +4,7 @@ import 'package:qr_stringify/src/drawers/drawers.dart';
 /// A factory class which creates [QrDrawerBase] representation according to
 /// its [Encoding].
 class QrDrawerFactory {
+  // coverage:ignore-line
   const QrDrawerFactory._();
 
   /// Static constructor for [QrDrawerBase].
