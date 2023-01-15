@@ -27,7 +27,7 @@ class QrBuilder {
   int padding = 0;
 
   /// Correction level of code.
-  ErrorCorrectionLevel correctionLevel = ErrorCorrectionLevel.H;
+  ErrorCorrectionLevel correctionLevel = ErrorCorrectionLevel.L;
 
   /// Data to represent as QR code.
   String data;
