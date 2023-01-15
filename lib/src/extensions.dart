@@ -15,5 +15,11 @@ extension IntX on int {
   ///
   /// For each unit of [int], one space is added. Used as padding in terminal.
   /// Returns spaced [String] which length is equal to [int].
-  String get space => ' ' * this;
+  String get space => this >= 0
+      ? ' ' * this
+      : throw ArgumentError.value(
+          this,
+          'int',
+          'Cannot be negative',
+        );
 }

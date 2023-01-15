@@ -7,10 +7,14 @@ import 'package:qr_stringify/qr_stringify.dart';
 /// pseudo-image representation.
 class QrCode {
   /// Creates an instance of class.
-  const QrCode(
+  QrCode(
     this._data,
     this._errorCorrectLevel,
-  );
+  ) {
+    if (_data.isEmpty) {
+      throw ArgumentError('Data cannot be empty');
+    }
+  }
 
   /// Named constructor which create an instance from [QrBuilder].
   QrCode.fromBuilder(QrBuilder builder)

@@ -1,5 +1,6 @@
 import 'package:qr_stringify/qr_stringify.dart';
 import 'package:qr_stringify/src/drawers/drawing_assembler.dart';
+import 'package:qr_stringify/src/extensions.dart';
 
 /// An abstract class which represents drawer for QR codes.
 ///
@@ -49,7 +50,7 @@ abstract class QrDrawerBase implements DrawingAssembler {
     _codeBuffer
       ..clear()
       ..writeln(_computeHorizontalPadding(padding, lines.first.length))
-      ..write(_computeVerticalPadding(padding, lines))
+      ..writeln(_computeVerticalPadding(padding, lines))
       ..writeln(_computeHorizontalPadding(padding, lines.first.length));
   }
 
