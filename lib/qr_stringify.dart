@@ -1,6 +1,6 @@
 library qr_stringify;
 
-export 'src/drawers/drawers.dart' hide DrawingAssembler;
+export 'src/drawers/drawers.dart' hide DrawingAssembler, Utf8;
 export 'src/enums.dart';
 export 'src/extensions.dart' hide StringBufferX;
 export 'src/models/models.dart';

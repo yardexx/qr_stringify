@@ -1,4 +1,5 @@
 import 'package:qr_stringify/qr_stringify.dart';
+import 'package:qr_stringify/src/drawers/drawers.dart';
 
 /// A factory class which creates [QrDrawerBase] representation according to
 /// its [Encoding].

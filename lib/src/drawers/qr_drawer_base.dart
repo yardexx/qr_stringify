@@ -45,6 +45,14 @@ abstract class QrDrawerBase implements DrawingAssembler {
       return;
     }
 
+    if (padding < 0) {
+      throw ArgumentError.value(
+        padding,
+        'padding',
+        'Padding cannot be negative',
+      );
+    }
+
     final lines = _codeBuffer.splitToLines()..removeLast();
 
     _codeBuffer
