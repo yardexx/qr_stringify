@@ -1,4 +1,5 @@
 import 'package:qr_stringify/qr_stringify.dart';
+import 'package:qr_stringify/src/drawers/drawers.dart';
 import 'package:qr_stringify/src/qr_drawer_factory.dart';
 import 'package:test/test.dart';
 
