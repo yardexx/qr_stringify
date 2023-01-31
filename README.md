@@ -78,6 +78,25 @@ final builder = QrBuilder(data: 'Hello World')
 
 More about error correction in QR codes [here](https://blog.qrstuff.com/general/qr-code-error-correction).
 
+### A note about line spacing (line height) 📝
+While qr_stringify is designed to be used in terminal, not all terminals will display code correctly.
+Some terminals which have bigger line spacing (> 1.0) will display a little bit of space between
+each line of code. 
+
+Ideally, QR code should look like this:
+![Ideal QR code](./assets/qr_ideal.svg) <img src="./assets/qr_ideal.svg">
+
+In most cases, you will end up with code that looks like this:
+![Common QR code](./assets/qr_common.svg) <img src="./assets/qr_common.svg">
+
+But sometimes, you will get totally broken code:
+![Broken QR code](./assets/qr_broken.svg) <img src="./assets/qr_broken.svg">
+
+Most of the time, first situation will occur which makes code still readable just **fine**. Second
+case can be fixed by adjusting line spacing of terminal.
+
+> ❗ Be aware of line spacing (line height) of terminal.
+
 ## Planned features 🗺
 - ASCII support
 - Borders
