@@ -84,13 +84,13 @@ Some terminals which have bigger line spacing (> 1.0) will display a little bit 
 each line of code. 
 
 Ideally, QR code should look like this:
-![Ideal QR code](./assets/qr_ideal.svg) <img src="./assets/qr_ideal.svg">
+![Ideal QR code](./assets/qr_ideal.svg)
 
 In most cases, you will end up with code that looks like this:
-![Common QR code](./assets/qr_common.svg) <img src="./assets/qr_common.svg">
+![Common QR code](./assets/qr_common.svg)
 
 But sometimes, you will get totally broken code:
-![Broken QR code](./assets/qr_broken.svg) <img src="./assets/qr_broken.svg">
+![Broken QR code](./assets/qr_broken.svg)
 
 Most of the time, first situation will occur which makes code still readable just **fine**. Second
 case can be fixed by adjusting line spacing of terminal.
