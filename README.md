@@ -25,6 +25,17 @@ You can extend `QrDrawer` class and make custom implementation for drawing QR co
 
 ## Usage 🛠
 
+### Adding dependency 📦
+This package is currently **not available** on [pub.dev](https://pub.dev/). 
+
+To add `qr_stringify` to your `pubspec.yaml` file, use git dependency:
+```yaml
+dependencies:
+  qr_stringify:
+    git:
+      url: 'https://github.com/yardexx/qr_stringify.git'
+```
+
 ### Creating QR Code 👷‍♂️
 To generate code, create instance of `QrBuilder` and provide `data` which you want to encode into QR
 Code. When you are satisfied with your settings, call `build()` to return QR code in form of `String`.
