@@ -38,7 +38,7 @@ jobs:
           dart test --coverage=coverage && dart pub global run coverage:format_coverage --lcov --in=coverage --out=coverage/lcov.info
 
       - name: ☂ Codecov
-        uses: codecov/codecov-action@v3.1.1
+        uses: codecov/codecov-action@v3.1.2
 
       - name: 🔎 Pana
         run: |
