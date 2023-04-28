@@ -1,0 +1,11 @@
+{
+  "name": "QR Stringify",
+  "description": "A simple QR code generator for Dart",
+  "twitter": "y4rdex",
+  "sidebar": [
+    ["Overview", "/"],
+    ["Installation", "/installation"],
+    ["Contributing", "/contributing"],
+    ["License", "/license"]
+  ]
+}
